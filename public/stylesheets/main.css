@@ -1,0 +1,179 @@
+body {
+  background-color:#000;
+  height:100%;
+  margin:0;
+  padding:0;
+  font-family:Times New Roman,Georgia,Serif;
+  font-size:16px;
+  color:#FFF;
+}
+
+h1 {
+  font-size: 15pt;
+  color:#00CED1;
+  font-weight:normal;
+}
+
+h3 {
+  font-size: 14pt;
+  font-weight:normal;
+  color: #87CEFA;
+}
+
+#content a:link, #footer a:link {
+  color:#87CEFA;
+  text-decoration: none;
+}
+
+#content a:visited, #footer a:visited {
+  color:#00CED1;
+}
+
+#content a:hover, #footer a:hover {
+  color:#CCCCCC;
+}
+
+#logo {
+  position:absolute;
+  z-index: 0;
+  top: -120px;
+}
+
+#content {
+  position:absolute;
+  top: 250px;
+  left:30%;
+  width:500px;
+  padding-bottom: 3em;
+}
+
+#content li{
+  list-style:none;
+}
+
+#content ul {
+  padding-left:0px;
+}
+
+#content ul ul {
+  margin-top:10px;
+	padding-bottom:10px;
+  margin-left:30px;
+}
+
+#content ul ul li{
+  padding:2px;
+}
+
+#container {
+  position: relative;
+  margin: 0px 0px 0px 0px;
+}
+
+#header {
+  width:auto;
+  position:absolute;
+  left: 30%;
+}
+
+#footer {
+  position:absolute;
+  background-color:#333333;
+  left:0px;
+  width: 100%;
+  text-align: center;
+	padding-top:10px;
+}
+
+#menu {
+  top: 150px;
+  width:700px;
+  position: absolute;
+  z-index: 100;
+  left: -20px;
+}
+#menu li{
+  list-style: none;
+  display: inline;
+	padding-right: 2px;
+}
+
+#facebook {
+  position:fixed;
+  left:0px;
+  top:0px;
+  z-index:50;
+	width: 300px;
+}
+
+.facebook_logo:link {
+  float:left;
+  width:60px;
+  height:60px;
+  background-position:left top;
+  background-repeat:no-repeat;;
+  background-image: url(../images/facebook_button/facebook_button_1.png)
+}
+
+.facebook_logo:hover {
+  background-image: url(../images/facebook_button/facebook_button_2.png)
+}
+
+#facebook p {
+  padding-top: 5px;
+}
+
+#ssLogo {
+  position:absolute;
+  top:0px;
+  left:600px;
+}
+
+#ssLogo img {
+  margin-top: -20px;
+}
+
+#d {
+  padding-right: 10px;
+  padding-bottom: 10px;
+  float: left;
+}
+
+#legenda {
+  text-align: justify;
+  margin-top: 90px;
+}
+
+.button {
+  text-decoration: none;
+  font-size:12pt;
+  color: #F0F0F0;
+  background-image: url(../images/button/b1_off.png);
+  background-position:left center;
+  background-repeat:repeat-x;
+  height:100px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:50px;
+  padding-bottom:50px;
+}
+
+.button:hover {
+  color:#AAA;
+  background-image: url(../images/button/b1_on.png);
+}
+
+.form_input {
+  width: 300px;
+}
+
+.red_text{
+	color:#FF0000;
+	padding-bottom:10px;
+}
+
+.name {
+	margin-top:-10px;
+  color: #87CEFA;
+	font-size:8pt;
+}

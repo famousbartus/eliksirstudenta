@@ -1,0 +1,29 @@
+%h1 Kontakt
+
+%p= flash.now[:notice]
+
+- form_for :email, :url => {:action => :send_email} do |form|
+  %p 
+    Do:
+    = mail_to "eliksirstudenta@gmail.com"
+  %p
+    = form.label :from, "Twój e-mail:"
+    = form.text_field :from, :size => 55
+  %p
+    = form.label :title, "Tytuł:"
+    = form.text_field :title, :size => 55
+
+  %p
+    = form.label :body, "Treść"
+    = form.text_area :body, :cols => 70, :rows => 10
+
+  %p= form.submit "Wyślij"
+  
+%p
+  Samorząd Studentów Uniwersytetu Jagiellońskiego
+  %br
+  Collegium Novum pok.033
+  %br
+  ul. Gołębia 24
+  %br
+  31-007 Kraków 

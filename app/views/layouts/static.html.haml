@@ -1,0 +1,37 @@
+%html{"xmlns" => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", "= yield :menuelang" => "en"}
+  %head
+    %meta{:'http-equiv' => "Content-Ttpe", :content => "application/xhtml+xml; charset=utf-8"}
+      %title Juwenaliowa Gra Miejska Magiczny Eliksir Studenta
+    = javascript_include_tag "jquery"
+    = stylesheet_link_tag "main"
+    %link{ :rel => "shortcut icon", :type => "image/x-icon", :href => "/images/favicon.gif"}
+
+  %body
+    #facebook
+      = link_to "", "http://www.facebook.com/pages/Magiczny-Eliksir-Studenta/199500726737459", :class => "facebook_logo"
+      %p Śledź nas na facebook-u
+    #container
+      #header
+        #logo= image_tag "mesLogo.png", :alt => "juwenaliowa gra miejska magiczny eliksir studenta"
+        #menu
+          %ul
+            %li= link_to "Aktualności", index_static_path, :class => "button"
+            %li= link_to "Legenda", legenda_static_path, :class => "button"
+            %li= link_to "Rejestracja", new_registration_path, :class => "button"
+            %li= link_to "Regulamin", regulamin_static_path, :class => "button"
+            %li= link_to "Kontakt", kontakt_static_path, :class => "button"
+        #ssLogo
+          %p Organizator
+          = image_tag "ssLogo.png"
+      #content
+        = yield
+    #footer
+      %p © copyright Samorząd Studentów Uniwersytetu Jagiellońskiego 2011
+      %p
+        design and create by Bartosz Michalski
+        = link_to "famousbartus.pl", "http://famousbartus.pl"
+
+:javascript
+  $(document).ready(function(){
+    $('#footer').css('top', 300+$('#content').height());
+  });

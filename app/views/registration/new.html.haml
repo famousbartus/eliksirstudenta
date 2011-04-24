@@ -1,0 +1,62 @@
+%h1 Rejestracja drużyny
+
+.red_text= flash.now[:notice]
+
+- form_for [:team, @team], :url => {:action => :create} do |form|
+  %table
+    %tr
+      %td= form.label :name, "Nazwa drużyny"
+      %td= form.text_field :name, :class => "form_input"
+
+    %tr
+      %td
+        %h3 Pierwszy gracz
+    - form.fields_for :first_player do |f|
+      %tr
+        %td= f.label :first_name, "Imię"
+        %td= f.text_field :first_name, :class => "form_input"
+      %tr
+        %td= f.label :surename, "Nazwisko"
+        %td= f.text_field :surename, :class => "form_input"
+      %tr
+        %td= f.label :email, "Adres Email"
+        %td= f.text_field :email, :class => "form_input"
+
+    %tr
+      %td
+        %h3 Drugi gracz
+    - form.fields_for :second_player do |f|
+      %tr
+        %td= f.label :first_name, "Imię"
+        %td= f.text_field :first_name, :class => "form_input"
+      %tr
+        %td= f.label :surename, "Nazwisko"
+        %td= f.text_field :surename, :class => "form_input"
+      %tr
+        %td= f.label :email, "Adres Email"
+        %td= f.text_field :email, :class => "form_input"
+
+    %tr
+      %td
+        %h3 Trzeci gracz
+    - form.fields_for :third_player do |f|
+      %tr
+        %td= f.label :first_name, "Imię"
+        %td= f.text_field :first_name, :class => "form_input"
+      %tr
+        %td= f.label :surename, "Nazwisko"
+        %td= f.text_field :surename, :class => "form_input"
+      %tr
+        %td= f.label :email, "Adres Email"
+        %td= f.text_field :email, :class => "form_input"
+
+    %tr
+      %td
+        = check_box_tag :accepted, 1, @checked
+      %td
+        Oświadczam że zapoznałem się i akceptuje
+        = link_to "regulamin" , regulamin_static_path, :target => "_blank"
+        %br
+        gry miejskiej "Magiczny eliksir studenta".
+
+  = form.submit "Zgłoś"

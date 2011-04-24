@@ -1,0 +1,16 @@
+%p Dziękujemy za rejestrację do Juwenaliowej Gry Miejskiej Magiczny Eliksir Studenta
+%p Drużyna #{@player.team.name} została stworzona.
+%p 
+  Klikając na link poniżej potwierdzasz swój udział i akceptujesz
+  = link_to "regulamin", regulamin_static_url
+%p= link_to "link", validate_registration_url(:id => @player.id, :hash => @hash.to_s)
+%p Email z potwierdzeniem został też przesłany do pozostałych członków Twojeje grupy.
+%p Rejestracja zostanie zakończona gdy wszyscy członkowie grupy zaakceptują regulamin.
+%p 
+  Śledź aktualności na stronie 
+  = link_to "eliksirstudenta.pl", "http://eliksirstudenta.pl"
+  lub na naszym profilu 
+  = link_to "facebook-owym", "http://www.facebook.com/pages/Magiczny-Eliksir-Studenta/199500726737459"
+  Tam dowiesz się szczegółów.
+%p Serdecznie pozdrawiamy,
+%p Organizatorzy Juwenaliowej Gry Miejskiej Magiczny Eliksir Studenta

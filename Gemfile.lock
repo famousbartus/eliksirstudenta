@@ -1,0 +1,54 @@
+GEM
+  remote: http://gemcutter.org/
+  remote: http://gems.github.com/
+  specs:
+    actionmailer (2.3.5)
+      actionpack (= 2.3.5)
+    actionpack (2.3.5)
+      activesupport (= 2.3.5)
+      rack (~> 1.0.0)
+    activerecord (2.3.5)
+      activesupport (= 2.3.5)
+    activeresource (2.3.5)
+      activesupport (= 2.3.5)
+    activesupport (2.3.5)
+    breadcrumbs_on_rails (1.0.1)
+    cgi_multipart_eof_fix (2.5.0)
+    daemons (1.1.0)
+    fastthread (1.0.7)
+    gem_plugin (0.2.3)
+    haml (2.2.20)
+    json (1.5.1)
+    mongrel (1.1.5)
+      cgi_multipart_eof_fix (>= 2.4)
+      daemons (>= 1.0.3)
+      fastthread (>= 1.0.1)
+      gem_plugin (>= 0.2.3)
+    mysql (2.8.1)
+    nokogiri (1.4.1)
+    rack (1.0.1)
+    rails (2.3.5)
+      actionmailer (= 2.3.5)
+      actionpack (= 2.3.5)
+      activerecord (= 2.3.5)
+      activeresource (= 2.3.5)
+      activesupport (= 2.3.5)
+      rake (>= 0.8.3)
+    rake (0.8.7)
+    sendgrid (0.1.4)
+    will_paginate (2.3.12)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  actionmailer (= 2.3.5)
+  breadcrumbs_on_rails
+  haml (= 2.2.20)
+  json
+  mongrel
+  mysql
+  nokogiri (= 1.4.1)
+  rails (= 2.3.5)
+  sendgrid
+  will_paginate (= 2.3.12)
