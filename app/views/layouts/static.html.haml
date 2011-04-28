@@ -22,7 +22,9 @@
             %li= link_to "Kontakt", kontakt_static_path, :class => "button"
         #ssLogo
           %p Organizator
-          = image_tag "ssLogo.png"
+          = link_to image_tag("ssLogo.png"), "http://www.samorzad.uj.edu.pl", :target => "_blank"
+          %p Partnerzy:
+          = link_to image_tag("ps.png"), "http://przystanekstudent.pl", :target => "_blank"
       #content
         = yield
     #footer
