@@ -2,6 +2,8 @@
 
 .red_text= flash.now[:notice]
 
+%p Stwórz swoją drużynę, pamiętaj że maksymalnie może miec 3 członków.
+
 - form_for [:team, @team], :url => {:action => :create} do |form|
   %table
     %tr
