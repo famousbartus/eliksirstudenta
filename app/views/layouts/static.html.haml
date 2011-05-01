@@ -8,7 +8,7 @@
 
   %body
     #facebook
-      = link_to "", "http://www.facebook.com/pages/Magiczny-Eliksir-Studenta/199500726737459", :class => "facebook_logo"
+      = link_to "", "http://www.facebook.com/pages/Magiczny-Eliksir-Studenta/199500726737459", :class => "facebook_logo", :target => "_blank"
       %p Śledź nas na facebook-u
     #container
       #header
@@ -21,10 +21,15 @@
             %li= link_to "Regulamin", regulamin_static_path, :class => "button"
             %li= link_to "Kontakt", kontakt_static_path, :class => "button"
         #ssLogo
-          %p Organizator
+          %p Organizator:
           = link_to image_tag("ssLogo.png"), "http://www.samorzad.uj.edu.pl", :target => "_blank"
           %p Partnerzy:
-          = link_to image_tag("ps.png"), "http://przystanekstudent.pl", :target => "_blank"
+          = link_to image_tag("ps.png"), "http://przystanekstudent.pl", :target => "_blank", :style => "padding-right:60px;"
+          = link_to image_tag("rotunda.png"), "http://rotunda.pl", :target => "_blank"
+          %p Sponsorzy:
+          = link_to image_tag("kijow.png"), "http://www.kijow.pl/", :target => "_blank", :style => "margin-left:40px;"
+          = link_to image_tag("mikro.png"), "http://www.kinomikro.pl/", :target => "_blank", :style => "padding-right:20px;"
+          = link_to image_tag("threeLions.png"), "http://www.3lions.pl/", :target => "_blank"
       #content
         = yield
     #footer
